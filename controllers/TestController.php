@@ -16,9 +16,11 @@ class TestController extends Controller
         $product->category = 'число';
         $product->price = 'бесценно';
 
+        $test = \Yii::$app->test->getProp();
 
         return $this->render('index', [
-            'product' => $product
+            'product' => $product,
+            'test' => $test,
         ]);
     }
 }
