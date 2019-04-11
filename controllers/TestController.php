@@ -18,7 +18,6 @@ class TestController extends Controller
 
 
         return $this->render('index', [
-            'data' => 'Чего-то там',
             'product' => $product
         ]);
     }
